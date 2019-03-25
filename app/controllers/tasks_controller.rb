@@ -39,12 +39,12 @@ def destroy
   @task = Task.find(params[:id])
   @task.destroy
 
-  redirect_to task_path
+  redirect_to tasks_path
 end
 
 
 private
   def task_params
-    params.require(:task).permit(:name, :details)
+    params.require(:task).permit(:who, :name, :details)
   end
 end

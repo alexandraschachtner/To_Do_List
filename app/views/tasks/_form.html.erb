@@ -14,7 +14,11 @@
     </div>
   <% end %>
 
-  <p>
+ <p>
+   <%= form.select :who, options_for_select([['Mom', 'Mom'],['Dad', 'Dad'],['Irwin', 'Irwin'],['Uncle Rob', 'Uncle Rob']]), prompt: "Please Assign a Family Memeber" %>
+ </p>
+
+ <p>
     <%= form.label :Name %><br>
     <%= form.text_field :name %>
   </p>
