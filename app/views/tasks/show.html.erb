@@ -1,4 +1,4 @@
-
+<h1> Task Details </h1>
 <p>
   <strong>Who:</strong>
   <%= @task.who %>
@@ -13,5 +13,11 @@
   <strong>Details:</strong>
   <%= @task.details %>
 </p>
-<%= link_to 'Back', tasks_path %>
-<%= link_to 'Edit', edit_task_path(@task) %> |
+
+<p>
+<%= link_to 'See all Tasks', tasks_path %></br>
+<%= link_to 'Edit this Task', edit_task_path(@task) %> </br>
+<%= link_to 'This task is finished. (delete)', task_path(@task),
+        method: :delete,
+        data: { confirm: 'Are you sure? More importantly, did you ask Mom?' } %>
+ </p>
