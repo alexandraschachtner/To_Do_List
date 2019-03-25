@@ -13,9 +13,10 @@
       <td><%= task.name %></td>
       <td><%= task.details %></td>
       <td><%= link_to 'Show', task_path(task) %></td>
+      <td><%= link_to 'Edit', edit_task_path(task) %></td>
     </tr>
   <% end %>
 </table>
 
 
-<%= link_to 'New article', new_article_path %>
+<%= link_to 'New article', new_task_path %>
