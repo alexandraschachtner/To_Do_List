@@ -38,18 +38,25 @@ h3{
 
 ul{
   align-self: center;
-  font-size: 48px;
+  font-size: 23px;
 
 }
-li{}
+
+li{
+
+}
 
 .bold{
     text-align: left;
-    text-shadow: 5px;
+    font-size: 40px;
 }
-
+.med{
+  text-align: left;
+  font-size: 36px;
+}
 .soft{
     text-align: center;
+    font-size: 25px;
 }
 
 

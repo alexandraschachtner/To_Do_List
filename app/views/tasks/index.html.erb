@@ -5,14 +5,18 @@
 <!-- tabel of current tasks for the williams family.  Need to add some borders, padding and margins.  Center table.
 edit and delete options are available in each particular task view.  User must take those steps to reach the
 edit/delete options. -->
-<div>
+<div class="soft">
 
+<%= link_to 'Add a task to the list.', new_task_path %>
+</div>
   <ul>
     <% @tasks.each do |task| %>
-      <li>
-        <div class="bold"><%= task.who %> --
-        <%= task.name %></li></div>
-      <div class="soft"><%= link_to '... open task', task_path(task) %> </div>
+      <li class="bold">
+        <%= task.name %> </li>
+        <ul>
+          <li class=""><%= task.who %></li>
+        </ul>
+      <div class="soft"><%= link_to '... open task', task_path(task) %></div>
     <% end %>
 </ul>
   <!-- I would like to make this into a list instead of table, i think it would be easier to style -->
@@ -31,7 +35,3 @@ edit/delete options. -->
     </tr>
   <% end %>
 </table> -->
-
-
-<%= link_to 'Add a task to the list.', new_task_path %>
-</div>
