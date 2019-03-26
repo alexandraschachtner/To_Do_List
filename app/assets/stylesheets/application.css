@@ -36,12 +36,34 @@ h3{
 
 }
 
+ul{
+
+}
+
+li{
+
+}
+
+.bold{
+    font-size: 40px;
+}
+
+.med{
+  font-size: 36px;
+}
+
+.soft{
+    text-align: center;
+    font-size: 25px;
+}
+
 .blurb{
 	background-color: white;
 	margin-left: 15%;
 	margin-right: 15%;
 	padding: 2%;
 }
+
 .standard{
 	text-align: center;
 }

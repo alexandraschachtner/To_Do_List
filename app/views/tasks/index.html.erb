@@ -1,15 +1,28 @@
 
-<h1>The Current Date and Time is:  </br> <%= Time.now.strftime("%m-%d-%Y %H:%M") %> </h1>
+<h1> Today's Date : <%= Time.now.strftime("%m-%d-%Y") %>
+ Current Time :  <%= Time.now.strftime("%H:%M") %></h1>
 
 <!-- tabel of current tasks for the williams family.  Need to add some borders, padding and margins.  Center table.
 edit and delete options are available in each particular task view.  User must take those steps to reach the
 edit/delete options. -->
-<div>
-<table>
+<div class="soft">
+<p><%= link_to 'Add a task to the list.', new_task_path %></p>
+</div>
+
+  <ul>
+    <% @tasks.each do |task| %>
+      <li class="bold">
+        <%= task.name %>
+        <span class="soft">Assigned to:</span> <%= task.who %>
+      <span class="standard"><%= link_to '... open task', task_path(task) %></span></li>
+    <% end %>
+</ul>
+  <!-- I would like to make this into a list instead of table, i think it would be easier to style -->
+<!-- <table>
   <tr>
-    <th>---- Assigned to ----</th>
-    <th>--- Task ---</th>
-    <th>--</th>
+    <th> Assigned to </th>
+    <th> Task </th>
+    <th></th>
   </tr>
 
 <% @tasks.each do |task| %>
@@ -19,8 +32,4 @@ edit/delete options. -->
       <td><%= link_to '... open task', task_path(task) %></td>
     </tr>
   <% end %>
-</table>
-
-
-<%= link_to 'Add a task to the list.', new_task_path %>
-</div>
+</table> -->
