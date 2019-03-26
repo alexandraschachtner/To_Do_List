@@ -13,3 +13,35 @@
  *= require_tree .
  *= require_self
  */
+body{
+ background-color: white;
+ background-image: url(bg.jpg);
+ background-size: cover;
+}
+
+h1{
+	color: green;
+	background-color: white;
+	padding: 5%;
+	margin-top: -10px;
+	margin-bottom: 10%;
+}
+
+h2{
+
+}
+
+
+h3{
+
+}
+
+.blurb{
+	background-color: white;
+	margin-left: 15%;
+	margin-right: 15%;
+	padding: 2%;
+}
+.standard{
+	text-align: center;
+}

@@ -1,10 +1,10 @@
 
-<h1>To Do</h1>
+<h1>The Current Date and Time is:  </br> <%= Time.now.strftime("%m-%d-%Y %H:%M") %> </h1>
 
 <!-- tabel of current tasks for the williams family.  Need to add some borders, padding and margins.  Center table.
 edit and delete options are available in each particular task view.  User must take those steps to reach the
 edit/delete options. -->
-
+<div>
 <table>
   <tr>
     <th>---- Assigned to ----</th>
@@ -23,3 +23,4 @@ edit/delete options. -->
 
 
 <%= link_to 'Add a task to the list.', new_task_path %>
+</div>
