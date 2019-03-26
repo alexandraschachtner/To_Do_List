@@ -13,7 +13,9 @@ Things you may want to know:
 
 * Ruby version2.5.3
 * Sqlite3 gem file git: "https://github.com/larskanis/sqlite3-ruby", branch: "add-gemspec" (line 9 in gemfile)
+	 - if this does not work use  -  gem 'sqlite3', '~> 1.3.6'  - then bundle install
 * Puma 3.12.1
 * CSS in application.css, no JS
+* was made and run on windows, to use on mac or if rails s does not work, use bundle exec rails ...
 
 * Questions or any help may be directed to lex.achter@gmail.com
