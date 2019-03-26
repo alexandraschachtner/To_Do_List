@@ -9,14 +9,11 @@ Starting page should give you a splash with a brief description of the program a
 
 Click the link to start.  You will be able to view a task list, create new tasks, assign a person to the task, edit information, delete or complete tasks.
 
-Things you may want to cover:
+Things you may want to know:
 
 * Ruby version2.5.3
 * Sqlite3 gem file git: "https://github.com/larskanis/sqlite3-ruby", branch: "add-gemspec" (line 9 in gemfile)
 * Puma 3.12.1
+* CSS in application.css, no JS
 
 * Questions or any help may be directed to lex.achter@gmail.com
-
-
-Sorry, there is NO gitignore.io
-Sorry, there is only css styling in the application.css
