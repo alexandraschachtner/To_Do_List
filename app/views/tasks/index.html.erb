@@ -6,17 +6,15 @@
 edit and delete options are available in each particular task view.  User must take those steps to reach the
 edit/delete options. -->
 <div class="soft">
-
-<%= link_to 'Add a task to the list.', new_task_path %>
+<p><%= link_to 'Add a task to the list.', new_task_path %></p>
 </div>
+
   <ul>
     <% @tasks.each do |task| %>
       <li class="bold">
-        <%= task.name %> </li>
-        <ul>
-          <li class=""><%= task.who %></li>
-        </ul>
-      <div class="soft"><%= link_to '... open task', task_path(task) %></div>
+        <%= task.name %>
+        <span class="soft">Assigned to:</span> <%= task.who %>
+      <span class="standard"><%= link_to '... open task', task_path(task) %></span></li>
     <% end %>
 </ul>
   <!-- I would like to make this into a list instead of table, i think it would be easier to style -->

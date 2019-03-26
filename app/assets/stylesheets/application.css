@@ -37,8 +37,6 @@ h3{
 }
 
 ul{
-  align-self: center;
-  font-size: 23px;
 
 }
 
@@ -47,18 +45,17 @@ li{
 }
 
 .bold{
-    text-align: left;
     font-size: 40px;
 }
+
 .med{
-  text-align: left;
   font-size: 36px;
 }
+
 .soft{
     text-align: center;
     font-size: 25px;
 }
-
 
 .blurb{
 	background-color: white;
@@ -66,6 +63,7 @@ li{
 	margin-right: 15%;
 	padding: 2%;
 }
+
 .standard{
 	text-align: center;
 }
