@@ -16,3 +16,7 @@ Things you may want to cover:
 * Puma 3.12.1
 
 * Questions or any help may be directed to lex.achter@gmail.com
+
+
+Sorry, there is NO gitignore.io
+Sorry, there is only css styling in the application.css
