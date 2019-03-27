@@ -13,6 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+/* elements */
 body{
  background-color: white;
  background-image: url(bg.jpg);
@@ -27,25 +29,7 @@ h1{
 	margin-bottom: 10%;
 }
 
-/*
-thought i may use these
-h2{
-
-}
-
-
-h3{
-
-}
-
-ul{
-
-}
-
-li{
-
-} */
-
+/* class */
 .bold{
     font-size: 40px;
 }
